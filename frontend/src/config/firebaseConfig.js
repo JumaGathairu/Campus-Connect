@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, doc, setDoc, getDoc, addDoc, updateDoc, deleteDoc, query, where, orderBy, limit } from "firebase/firestore";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyCiRT4SNz7KSTqALUJCE9ovwHKZOunCC5E",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "kca-final-year-project.firebaseapp.com",
   projectId: "kca-final-year-project",
   storageBucket: "kca-final-year-project.firebasestorage.app",
